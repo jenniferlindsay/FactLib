@@ -1,0 +1,29 @@
+{
+  "name": "factlib",
+  "version": "1.0.0",
+  "description": "This program generates interesting facts.",
+  "main": "src/FactLib.ts",
+  "types": "src/FactLib.d.ts",
+  "files": [
+    "/src"
+  ],
+  "compilerOptions": {
+    "module": "CommonJS"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --forceExit",
+    "build": "tsc src/app.ts && tsc src/FactLib.ts && tsc main.ts",
+    "main": "node main.js"
+  },
+  "author": "JL",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
